@@ -1,0 +1,137 @@
+:root{
+    --submit-green: #586d48;
+    --bluish-white:#f9fafb;
+    --aquatic-blue:#2fb0e8
+     /* fallback is sans-serif */
+
+}
+
+body{
+    display:flex;
+    margin: 0px;
+    height:100vh;
+}
+
+.banner {
+    /*background-color: green;*/
+    width: 30vw;
+    background-image:url("imgs/shifaz-abdul-hakkim-NZTsrLSgNv0-unsplash.jpg");
+    background-size: cover;
+    /*position: relative;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+
+    /*!*background-repeat: no-repeat;*! if image is smaller it doesnt repeat*/
+}
+.logo{
+    display:flex;
+    justify-content: center;
+    background-color:black;
+    height:15%;
+    opacity: 50%;
+    position: relative;
+    top:20%;
+
+}
+
+.logo h1 {
+    height: 100%; /* Match parent height */
+    color: White;
+    font-family: "Norse", sans-serif;
+    font-size:20vh;
+
+
+    margin: 0; /* Remove default margin */
+
+}
+
+.form{
+    background-color: white;
+    flex:1;
+    justify-content: center;
+}
+.blockquote_div{
+    background-color: var(--bluish-white);
+    height:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+blockquote{
+
+    font-size: 28px;
+    font-weight: 300;
+}
+
+form{
+    background-color: white;
+    padding: 40px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h1 {
+    margin: 0 0 30px 0;
+    font-size: 32px;
+}
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+
+}
+.form-row {
+    display: flex;
+    gap: 60px; /* Space between columns */
+    margin-bottom: 24px;
+    flex:1;
+}
+
+/* Each field group (label + input) */
+.form-group {
+    flex: 1; /* Equal width columns */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+input{
+    /*font-weight: 50;*/
+    /*color: #6c747c;*/
+    /*background-color: rgba(255, 255, 255, 0.5;*/
+    /*!*opacity:0.2;*!*/
+    padding: 8px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-bottom: 5px; /* Optional: adds space between label and input */
+}
+
+input:invalid:focus {
+    border-color: #dc2626;
+}
+
+button{
+    border-radius:6px;
+    background-color: #2fb0e8;
+    color:white;
+    width:10rem;
+    height:2rem;
+}
+.submitandlogin{
+    margin-left:50px;
+    margin-top: 50px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2585af;
+}
+
+
+
+
